@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>header}}
+<body>
+    <section class="sub-header2">
+        {{>navbar2}}
+        <div class="txtsub-container">
+            <h1 class="h-primary center">CONTACT US</h1>
+            <div class="main1 center">
+                <h1><span class="auto-input"></span></h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="row">
+            <span>
+                <div class="cont">
+                    <div class="details">
+                        <img src="images/home.svg" alt="address">
+                    </div>
+                    {{!-- <h5 class="mob">The Amazon Tower</h5> --}}
+                    <a href="https://maps.app.goo.gl/khizWXaUYk5CKkYT8" target="_blank"><h5 class="mob">The Khalifa Tower</h5></a>
+                    <p class="park">Jamiya Masjid Tumkur</p>
+                    <hr class="contact-hr">
+                </div>
+            </span>
+            <span>
+                <div class="cont">
+                    <div class="details">
+                        <img src="images/phone.svg" alt="mob">
+                    </div>
+                    {{!-- <h5 class="mob">8310902661</h5> --}}
+                    <a href="tel:8310902661" target="_blank"><p class="mob">8310902661</p></a>
+                    <p class="park">Monday to Friday, 10AM to 4PM</p>
+                    <hr class="contact-hr">
+                </div>
+            </span>
+            <span>
+
+                <div class="cont">
+                    <div class="details">
+                        <img src="images/envelope.svg" alt="Email">
+                    </div>
+                    {{!-- <h5 class="mob">yaseen@amazonconstruction.com</h5> --}}
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=yaseenweb123@gmail.com&subject=MISSED%20CALL%20EZTRADER&body=Hello%0AThis%20is%20Yaseen%0AWhat's%20on%20your%20mind??..%0A%0A%0AThank%20You%2C%0A%0A%0A%0A" target="_blank"><p class="mob">team@yaseenpasha.com</p></a>
+                    <p class="park">Email us to query</p>
+                    <hr class="contact-hr">
+                </div>
+            </span>
+        </div>
+
+        <div class="map">
+            <p class="city center">--LOCATION--</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15528.300987169963!2d77.100393!3d13.3455953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb02f736817df03%3A0x3bc6432121cc6ad!2sYaseen%20Web!5e0!3m2!1sen!2sin!4v1716121739442!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <hr>
+
+    <section class="cont-col2">
+        <div class="render">
+            <div class="thumb">
+                <h3 class="nap center">Get In Touch With Us</h3>
+            </div>
+            <form action="/contact" method="POST">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Enter Email id" required>
+                <input type="text" name="subject" id="subject" placeholder="Enter your concern" required>
+                <textarea rows="5" name="message" id="message" placeholder="Message" required></textarea>
+                <button type="submit" id="submit" class="btn center1">send message</button>
+            </form>
+        </div>
+    </section>
+
+    {{>footer}}
+</body>
+</html>
